@@ -60,7 +60,7 @@ const loginHandler = async(req, res) => {
     })
 
     if (!user) {
-      return res.status(401).json("Invalid Credential kontol");
+      return res.status(401).json("Invalid Credential");
     }
 
     const validPassword = await bcrypt.compare(
